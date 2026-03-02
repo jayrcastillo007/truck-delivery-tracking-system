@@ -20,21 +20,6 @@ class TransactionController extends Controller
             abort(403); // Forbidden
         }
 
-        // $provinces = DB::table('refprovince')
-        //     ->select('provCode as id', 'provDesc as name')
-        //     ->orderBy('provDesc', 'asc')
-        //     // ->limit(10)
-        //     ->get();
-
-        // $transactions = Transactions::with(['driver', 'vehicle'])
-        //     ->orderBy('created_at', 'desc')
-        //     ->simplePaginate(10);
-
-        // return view('transaction.index', [
-        //     'transactions' => $transactions,
-        //     'provinces'    => $provinces,
-        // ]);
-
         return view('transaction.index');
     }
 
